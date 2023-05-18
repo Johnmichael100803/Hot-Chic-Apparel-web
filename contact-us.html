@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+
+     <!-- navbar -->
+     <nav class = "navbar navbar-expand-lg navbar-light bg-white  fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/hca.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">Hot Chic Apparel</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "collection.html">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "specials.html">specials</a>
+                    </li>
+                  
+                    <li class="nav-item dropdown nav-item px-2 py-2">
+                        <a
+                          class="nav-link dropdown-toggle text-dark text-uppercase"
+                          href="#"
+                          id="navbarDropdownMenuLink"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          About Us
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdownMenuLink"
+                        >
+                          <li>
+                            <a class="dropdown-item  text-dark text-uppercase" href="about-us.html"
+                              >What to know?</a
+                            >
+                          </li>
+                          <li><a class="dropdown-item  text-dark text-uppercase" href="our-services.html">Our Services</a></li>
+                          <li><a class="dropdown-item  text-dark text-uppercase" href="reviews.html">Reviews</a></li>
+                        </ul>
+                      </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark " href = "gallery.html">gallery</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "login.html">Log In</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+     <div class="masthead"
+        style="background-image: url('./images/phone.jpg');">
+        <div class="color-overlay d-flex justify-content-center align-items-center">
+      
+    
+         
+
+     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4 text-uppercase text-center fw-bold">Contact Us</h1>
+                <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus iste quod aliquam veritatis sit, beatae quam, nam, voluptates animi quis repudiandae possimus nostrum illo molestiae nisi adipisci dolor. Error!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <i class="fas fa-map-marker-alt fa-3x text-dark" aria-hidden="true"></i>
+                <h3>Location</h3>
+                <p>V.D.S.R, Capas, Tarlac, Philippines</p>
+                <i class="fa fa-phone fa-3x text-dark"></i>
+                <h3>Call Us</h3>
+                <p>+63 927-708-7379</p>
+                <i class="fa fa-envelope fa-3x text-dark"></i>
+                <h3>Email</h3>
+                <p>gohancastillo5@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="contactform">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <span id="lblResponse" class="tab-content"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input name="tbName" type="text" id="tbName" class="form-control my-2" placeholder="Name">
+                        </div>
+                        <br>
+                        <div class="col-md-6">
+                            <input type="text" name="tbEmail" id="tbEmail" class="form-control my-2" placeholder="Email">
+                        </div>
+                        <br>                       
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" name="tbSubject" id="tbSubject" class="form-control my-2" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea name="tbMessage" id="tbMessage" cols="20" rows="10" cols="30" class="form-control my-2" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="submit" name="btnSendMsg" value="SendMessage" id="btnSendMsg" type="submit" class="btn btn-lg btn-submit btn-outline-light">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+</div>
+
+
+
+
+<!-- footer -->
+<footer class = "bg-dark py-5">
+    <div class = "container">
+        <div class = "row text-white g-4">
+            <div class = "col-md-6 col-lg-3">
+                <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Attire</a>
+                <p class = "text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light">Links</h5>
+                <ul class = "list-unstyled">
+                    <li class = "my-3">
+                        <a href = "contact-us.html" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Contact Us
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "privacy-policy.html" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Privacy Policy
+                        </a>
+                    </li>
+                    <li class = "my-3">
+                        <a href = "refund.html" class = "text-white text-decoration-none text-muted">
+                            <i class = "fas fa-chevron-right me-1"></i> Refund Policy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Contact Us</h5>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        V.D.S.R. Capas, Tarlac, Philippines
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-envelope"></i>
+                    </span>
+                    <span class = "fw-light">
+                        gohancastillo5@gmail.com
+                    </span>
+                </div>
+                <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class = "me-3">
+                        <i class = "fas fa-phone-alt"></i>
+                    </span>
+                    <span class = "fw-light">
+                        +63 927-708-7379
+                    </span>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-3">
+                <h5 class = "fw-light mb-3">Follow Us</h5>
+                <div>
+                    <ul class = "list-unstyled d-flex">
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href="" class="link-light">Hot Chic Appeal</a></u> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae aliquam nostrum vero nemo, necessitatibus dolores illum perferendis id!</p>
+                    <p class="h6">© All right Reversed.<a class="text-green ml-2 link-light" href="" target="_blank">Hot Chic Appeal</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+<!-- Side Bar Cart -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">Cart</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Body
+    </div>
+  
+     <!-- End Of Side Bar Cart -->
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
