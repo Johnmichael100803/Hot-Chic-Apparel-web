@@ -27,7 +27,7 @@
 }
 
 body{
-    background: bisque;
+    background: rgb(252, 241, 231);
     font-family: var(--sm-font);
     height: 100%;
 }

@@ -11,6 +11,8 @@
     <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <!-- custom css -->
     <link rel = "stylesheet" href = "css/style3.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
 </head>
 <body>
     <!-- navbar -->
@@ -94,10 +96,10 @@
         </div>
     </div>
 
-    <section id="testimonials">
+    <section id="testimonials container">
         <div class="testimonial-heading">
-            <span>Comments</span>
-            <h1>Clients Says</h1>
+            <span data-aos="zoom-in">Comments</span>
+            <h2 data-aos="zoom-out">Clients Says</h2>
         </div>
    
 
@@ -106,7 +108,7 @@
         <!-- BOX 1 -->
         <div class="testimonial-box">
             <!-- TOP -->
-            <div class="box-top">
+            <div class="box-top" data-aos="fade-right">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="images/me.jpg" />
@@ -127,7 +129,7 @@
                 </div>
             </div>
             <!-- Comments -->
-            <div class="client-comment">
+            <div class="client-comment" data-aos="fade-right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt necessitatibus nobis porro debitis ex sequi quidem maiores tempora molestias quod, ipsum aliquam consequatur exercitationem quae veritatis architecto dolores praesentium?</p>
             </div>
         </div>
@@ -135,7 +137,7 @@
          <!-- BOX 2 -->
          <div class="testimonial-box">
             <!-- TOP -->
-            <div class="box-top">
+            <div class="box-top" data-aos="fade-left">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="images/carlo.jpg" />
@@ -156,7 +158,7 @@
                 </div>
             </div>
             <!-- Comments -->
-            <div class="client-comment">
+            <div class="client-comment" data-aos="fade-left">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt necessitatibus nobis porro debitis ex sequi quidem maiores tempora molestias quod, ipsum aliquam consequatur exercitationem quae veritatis architecto dolores praesentium?</p>
             </div>
         </div>
@@ -164,7 +166,7 @@
          <!-- BOX 3 -->
          <div class="testimonial-box">
             <!-- TOP -->
-            <div class="box-top">
+            <div class="box-top" data-aos="fade-left">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="images/abi.jpg" />
@@ -185,7 +187,7 @@
                 </div>
             </div>
             <!-- Comments -->
-            <div class="client-comment">
+            <div class="client-comment" data-aos="fade-left">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt necessitatibus nobis porro debitis ex sequi quidem maiores tempora molestias quod, ipsum aliquam consequatur exercitationem quae veritatis architecto dolores praesentium?</p>
             </div>
         </div>
@@ -193,7 +195,7 @@
          <!-- BOX 4 -->
          <div class="testimonial-box">
             <!-- TOP -->
-            <div class="box-top">
+            <div class="box-top" data-aos="fade-right">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="images/je.jpg" />
@@ -214,7 +216,7 @@
                 </div>
             </div>
             <!-- Comments -->
-            <div class="client-comment">
+            <div class="client-comment" data-aos="fade-right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt necessitatibus nobis porro debitis ex sequi quidem maiores tempora molestias quod, ipsum aliquam consequatur exercitationem quae veritatis architecto dolores praesentium?</p>
             </div>
         </div>
@@ -222,7 +224,7 @@
          <!-- BOX 5 -->
          <div class="testimonial-box">
             <!-- TOP -->
-            <div class="box-top">
+            <div class="box-top" data-aos="fade-left">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="images/cent.jpg" />
@@ -243,7 +245,7 @@
                 </div>
             </div>
             <!-- Comments -->
-            <div class="client-comment">
+            <div class="client-comment" data-aos="fade-left">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt necessitatibus nobis porro debitis ex sequi quidem maiores tempora molestias quod, ipsum aliquam consequatur exercitationem quae veritatis architecto dolores praesentium?</p>
             </div>
         </div>
@@ -252,7 +254,7 @@
          <!-- BOX 6 -->
          <div class="testimonial-box">
             <!-- TOP -->
-            <div class="box-top">
+            <div class="box-top" data-aos="fade-right">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="images/chan.jpg" />
@@ -273,7 +275,7 @@
                 </div>
             </div>
             <!-- Comments -->
-            <div class="client-comment">
+            <div class="client-comment" data-aos="fade-right">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt necessitatibus nobis porro debitis ex sequi quidem maiores tempora molestias quod, ipsum aliquam consequatur exercitationem quae veritatis architecto dolores praesentium?</p>
             </div>
         </div>
@@ -381,16 +383,54 @@
 <!-- end of footer -->
 
 
+ <!-- Side Bar Cart -->
+ <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel">CART</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+            <div class = "collection-img position-relative">
+                <img src = "sweatshirtsimg/Sweat Shirts/img4.jpg" class = "w-100">
+                
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">tokyo street</p>
+                <span class = "fw-bold">₱ 250.50</span>
+                <div class="d-flex justify-content-center gap-4 mt-3">                      
+                </div>
+            </div>
+        </div> 
 
-    <!-- Side Bar Cart -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        Body
-      </div>
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+            <div class = "collection-img position-relative">
+                <img src = "tshirts/img2.jpg" class = "w-100">
+                
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">tokyo street</p>
+                <span class = "fw-bold">₱ 250.50</span>
+                <div class="d-flex justify-content-center gap-4 mt-3">                      
+                </div>
+            </div>
+        </div> 
+
+        <div class = "col-md-6 col-lg-4 col-xl-3 p-2 best">
+            <div class = "collection-img position-relative">
+                <img src = "poloshirt/Polo Shirts/img3.jpg" class = "w-100">
+                
+            </div>
+            <div class = "text-center">
+                <p class = "text-capitalize my-1">tokyo street</p>
+                <span class = "fw-bold">₱ 250.50</span>
+                <div class="d-flex justify-content-center gap-4 mt-3">                      
+                </div>
+            </div>
+        </div> 
+    </div>
+     <!-- End Of Side Bar Cart -->
+
 
 
 
@@ -399,5 +439,9 @@
 
 <!-- bootstrap js -->
 <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
