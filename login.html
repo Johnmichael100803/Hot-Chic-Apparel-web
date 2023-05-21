@@ -12,7 +12,7 @@
     <!-- bootstrap css -->
     <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel = "stylesheet" href = "css/main.css">
-    <link rel="stylesheet" href="css/sheet.css">  
+    
     
      
 
@@ -119,12 +119,7 @@
                 <div class="input-field">
                     <input type="password" class="input-box" id="logPassword" required>
                     <label for="logPassword">Password</label>
-                     <div class="eye-area">
-                            <div class="eye-box" onclick="myLogPassword()">
-                                <i class="fa-regular fa-eye" id="eye"></i>
-                                <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
-                            </div>
-                     </div>
+                   
                 </div>
                 <div class="remember">
                     <input type="checkbox" id="formCheck" class="check">
@@ -189,7 +184,69 @@
 
     </div>
  </div>
+ 
+ <script>
 
+    var x = document.getElementById('login');
+    var y = document.getElementById('register');
+    var z = document.getElementById('btn');
+
+    function login(){
+       x.style.left = "27px";
+       y.style.right = "-350px";
+       z.style.left = "0px";
+    }
+    function register(){
+       x.style.left = "-350px";
+       y.style.right = "25px";
+       z.style.left = "150px";
+    }
+
+  // view password codes
+  
+  
+  function myLogPassword(){
+
+   var a = document.getElementById('logPassword');
+   var b = document.getElementById('eye');
+   var c = document.getElementById('eye-slash');
+
+   if(a.type === "password"){
+       a.type = "text"
+       b.style.opacity = "0";
+       c.style.opacity = "1";
+
+   }else{    
+       a.type = "password"
+       b.style.opacity = "1";
+       c.style.opacity = "0";
+
+   }
+
+  }
+  
+  
+  function myRegPassword(){
+
+var d = document.getElementById('regPassword');
+var b = document.getElementById("eye-2");
+var c = document.getElementById("eye-slash-2");
+
+if(d.type === "password"){
+   d.type = "text"
+   b.style.opacity = "0";
+   c.style.opacity = "1";
+
+}else{    
+   d.type = "password"
+   b.style.opacity = "1";
+   c.style.opacity = "0";
+
+}
+
+}
+
+</script>
  
  <!-- footer -->
  <footer class = "bg-dark py-5">
@@ -339,83 +396,15 @@
                 </div>
             </div>
         </div> 
+        <button class="btn btn-primary px-50 py-1 fs-10 mt-3">Buy Now</button>
     </div>
      <!-- End Of Side Bar Cart -->
-
-
     
-<script>
 
-     var x = document.getElementById('login');
-     var y = document.getElementById('register');
-     var z = document.getElementById('btn');
- 
-     function login(){
-        x.style.left = "27px";
-        y.style.right = "-350px";
-        z.style.left = "0px";
-     }
-     function register(){
-        x.style.left = "-350px";
-        y.style.right = "25px";
-        z.style.left = "150px";
-     }
-
-   // view password codes
-   
-   
-   function myLogPassword(){
-
-    var a = document.getElementById('logPassword');
-    var b = document.getElementById('eye');
-    var c = document.getElementById('eye-slash');
-
-    if(a.type === "password"){
-        a.type = "text"
-        b.style.opacity = "0";
-        c.style.opacity = "1";
-
-    }else{    
-        a.type = "password"
-        b.style.opacity = "1";
-        c.style.opacity = "0";
-
-    }
-
-   }
-   
-   
-   function myRegPassword(){
-
-var d = document.getElementById('regPassword');
-var b = document.getElementById("eye-2");
-var c = document.getElementById("eye-slash-2");
-
-if(d.type === "password"){
-    d.type = "text"
-    b.style.opacity = "0";
-    c.style.opacity = "1";
-
-}else{    
-    d.type = "password"
-    b.style.opacity = "1";
-    c.style.opacity = "0";
-
-}
-
-}
-
-</script>
-
-
-
-
-
-
-
- 
 
    <!-- bootstrap js -->
  <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
+ <script src="js/jquery-3.6.0.js"></script>
 </body>
 </html>
