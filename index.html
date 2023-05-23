@@ -98,14 +98,46 @@
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
         <div class="carousel-inner">
-          <div class="carousel-item active c-item">
-            <img src="images/hero-img.jpg" class="d-block w-100 c-img" alt="...">
-            <div class="carousel-caption position-absolute top-50 start-50  translate-middle">
-                <p class="mt-5 fs-3 text-uppercase">First slide label</p>
-                <h1 class="display-1 fw-bolder ">Hot Chic Apparel</h1>
-                <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Learn More</button>
+            <div class="carousel-item active c-item">
+                <img src="images/hero-img.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption position-absolute top-50 start-50  translate-middle">
+                    <p class="mt-5 fs-3 text-uppercase">First slide label</p>
+                    <h1 class="display-1 fw-bolder ">Hot Chic Apparel</h1>
+                    <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Learn More</button>
+                  </div>
               </div>
-          </div>
+              
+              <style>
+                @media (max-width: 576px) { /* Adjust the breakpoint as needed */
+                  h1.display-1 {
+                    font-size: 5rem; /* Adjust the font size for mobile devices */
+                  }
+                  .card-grid .card{
+                    max-height: 20rem;
+                    max-width: 20rem ;
+                    margin-left: 14rem;
+                  
+                    
+                    
+                  }
+                }
+
+                @media (max-width: 499px) { /* Adjust the breakpoint as needed */
+                  h1.display-1 {
+                    font-size: 5rem; /* Adjust the font size for mobile devices */
+                  }
+                  .card-grid .card{
+                    max-height: 20rem;
+                    max-width: 20rem ;
+                    margin-left: 13rem;
+                  
+                    
+                    
+                  }
+                }
+              </style>
+              
+              
           <div class="carousel-item c-item">
             <img src="images/hero-img2.jpg" class="d-block w-100 c-img" alt="...">
             <div class="carousel-caption position-absolute top-50 start-50  translate-middle">
@@ -166,7 +198,7 @@
             </div>
             <div class = "card-grid">
             
-           <a href="" class="card" data-aos="fade-up">
+           <a  class="card" data-aos="fade-up">
             <div class="background" style="background-image: url('images/img1.jpg');"></div>
             <span class="content">
                 <p class="category">Hot chic Apparel</p>
@@ -174,7 +206,7 @@
             </span>
            </a>
     
-           <a href="" class="card" data-aos="fade-down">
+           <a class="card" data-aos="fade-down">
             <div class="background" style="background-image: url('tshirts/img1.jpg');"></div>
             <span class="content">
                 <p class="category">Hot chic Apparel</p>
@@ -182,7 +214,7 @@
             </span>
            </a>
     
-           <a href="" class="card" data-aos="fade-up">
+           <a class="card" data-aos="fade-up">
             <div class="background" style="background-image: url('poloshirt/Polo Shirts/img7.jpg');"></div>
             <span class="content">
                 <p class="category">Hot Chic Apparel</p>
@@ -190,7 +222,7 @@
             </span>
            </a>
     
-           <a href="" class="card" data-aos="fade-down">
+           <a  class="card" data-aos="fade-down">
             <div class="background" style="background-image: url('mensbottom/Mens Bottom/img1.jpg');"></div>
             <span class="content">
                 <p class="category">Hot Chic Apparel</p>
@@ -198,7 +230,7 @@
             </span>
            </a>
     
-           <a href="" class="card" data-aos="fade-up">
+           <a class="card" data-aos="fade-up">
             <div class="background" style="background-image: url('womenfashion/Womens Fashion/img1.jpg');"></div>
             <span class="content">
                 <p class="category">hot chic apparel</p>
@@ -218,8 +250,8 @@
                 <h2 class = "position-relative d-inline-block"  data-aos="fade-right">Our Latest Blog</h2>
             </div>
 
-            <div class = "row g-3">
-                <div class = "myblog card border-0 col-md-6 col-lg-4 bg-transparent my-3" >
+            <div class = "row g-3 blog">
+                <div class = "myblog card border-0 col-md-6 col-lg-4 bg-transparent my-3 " >
                     <img  data-aos="fade-up" src = "images/blog1.jpg" alt = "">
                     <div class = "card-body px-0">
                         <h4  data-aos="zoom-in" class = "card-title">Street Modeling</h4>
